@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: dimgrey;
+}
+
+header {
+    display: flex;
+    flex: 1;
+    height: 100px;
+    max-height: 100px;
+    justify-content: center;
+    background-color: #fff;
+    padding: 15px 15px 15px 15px;
+    box-shadow: 0 1px 11px rgba(0, 0, 0, 0.61);
+}
+
+.toolbar{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+
+}
+
+.container {
+    max-width: 900px;
+    width: 100%;
+}
+
+.menu {
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    line-height: 30px;
+    margin-right: 15px;
+    color: #333;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+.logo {
+    max-width: 250px;
+}
+
+main {
+    flex: 1;
+    background: url("background.jpg") center;
+    background-size: cover;
+    background-position-y: 0;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+
+.message-box {
+    top: 25%;
+    position: relative;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 30px;
+    text-align: center;
+    height: 150px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2em;
+    z-index: 2;
+    text-shadow: 1px 1px 1px #000;
+    margin-top: 20px;
+}
+
+.corner {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    border-top: 2px solid #ffcc2a;
+    border-left: 2px solid #ffcc2a;
+    top: 0;
+    left: 0;
+}
+
+.corner.right {
+    transform: rotate(90deg);
+    left: auto;
+    right: 0;
+}
+
+.corner.right.bottom {
+    transform: rotate(180deg);
+    top: auto;
+    bottom: 0;
+}
+
+.corner.left.bottom {
+    transform: rotate(270deg);
+    top: auto;
+    bottom: 0;
+}
+
+button.contact, a.contact {
+    padding: 10px 20px;
+    background-color: #ffcc2a;
+    color: #333;
+    text-transform: uppercase;
+    border: 0;
+    font-weight: bold;
+    max-width: 50%;
+    margin-bottom: -20px;
+    position: relative;
+    display: block;
+    text-decoration: none;
+    font-size: .7em;
+}
